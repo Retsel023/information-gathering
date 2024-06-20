@@ -35,7 +35,7 @@ def scan_services(target_type, target):
 
     # Scan for services on all ports
     service_scan_file = f"service_scan_{target_name}.txt"
-    command = f"nmap -oN {service_scan_file} {target_str}"
+    command = f"nmap -O -oN {service_scan_file} {target_str}"
     print(f"Scanning services for {target_type} {target[0]}: {command}")
     run_nmap(command)
     return service_scan_file
