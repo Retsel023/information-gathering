@@ -71,7 +71,7 @@ if __name__ == "__main__":
 
     for target, ip in targets:
         service_scan_file = scan_services(target, ip)
-        time.sleep(5)  # Voeg een vertraging van 5 seconden toe tussen scans
+        time.sleep(60)  # Voeg een vertraging van 5 seconden toe tussen scans
         scan_open_ports(target, ip, service_scan_file)
 
     print("Scans completed successfully.")
