@@ -9,4 +9,4 @@ in overzicht.txt wordt een lijstje gemaakt van domains/subdomain met bijbehorend
 
 nmapscript.py voert nmap -O (os-detection) uit voor ieder subdomain/ip in overzicht.txt.
 Vervolgens wordt er naar de output gekeken welke openports er gescanned zijn en voor deze ports specifiek wordt nmap -sV -Pn -p uitgevoerd om de service achter de poorten te achterhalen.
-De tijd tussen de scans in kan worde aangepast om ddos protection te omzeilen.
+De tijd tussen de scans in kan worden aangepast om ddos protection te omzeilen.
