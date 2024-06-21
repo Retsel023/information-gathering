@@ -79,7 +79,7 @@ if __name__ == "__main__":
         # Scan based on IP address if available
         if target[1]:
             service_scan_file_ip = scan_services("IP address", (target[1], None))
-            time.sleep(30)  # Voeg een vertraging van 5 seconden toe tussen scans
+            time.sleep(60)  # Voeg een vertraging van 5 seconden toe tussen scans
             scan_open_ports("IP address", (target[1], None), service_scan_file_ip)
 
     print("Scans completed successfully.")
